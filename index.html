@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nani Solutions</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Header -->
+    
+<header>
+  <div class="header-top">
+    <div class="logo">
+      <img src="assets/images/logo.jpeg" alt="Logo" />
+    </div>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <!-- Desktop nav -->
+    <nav class="desktop-nav">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact" class="contact-btn">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile nav -->
+  <nav id="main-nav" class="mobile-nav">
+    <button class="close-nav" onclick="toggleMenu()">×</button>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact" class="contact-btn">Contact</a>
+  </nav>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Nani Solutions</h1>
+        <p class="hero-subtitle">Experience technology that connects you beyond
+          imagination</p>
+        <a href="#services" class="btn-primary">VIEW SERVICES</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="about-content">
+        <div class="about-text">
+          <span class="section-subheading">Empowering your brand</span>
+          <h2 class="section-heading">Digital marketing excellence awaits</h2>
+          <p>
+            Nani Solutions is your trusted digital marketing partner in
+            Coimbatore, dedicated to elevating your online presence.
+            Our expertise spans SEO, social media management, content marketing,
+            and online advertising, tailored to drive growth
+            for businesses of all sizes. We understand the digital landscape and
+            craft strategies that connect with your audience,
+            enhance visibility, and boost engagement. Together, let's transform
+            your brand's digital footprint and achieve
+            remarkable results.
+          </p>
+          <a href="#contact" class="about-link">Get in touch</a>
+        </div>
+        <div class="about-image">
+          <img src="assets/images/office.jpeg" alt="Office">
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services-section" id="services">
+      <span class="section-subheading">Boost your business</span>
+      <h2 class="section-heading">Elevate your online presence today!</h2>
+
+      <div class="services-grid">
+        <!-- Service Card Template -->
+        <div class="service-card">
+          <img src="assets/images/digital-marketing.jpeg"
+            alt="Digital Marketing">
+          <div class="service-card-content">
+            <a href="services/digital-marketing.html"
+              class="service-card-title">Digital marketing &rsaquo;</a>
+            <p class="service-card-desc">Smart strategies for your digital
+              growth</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="assets/images/website.jpeg" alt="Website">
+          <div class="service-card-content">
+            <a href="services/website.html" class="service-card-title">Website
+              &rsaquo;</a>
+            <p class="service-card-desc">Custom websites for your digital
+              success</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="assets/images/mobile-apps.jpeg" alt="Mobile Apps">
+          <div class="service-card-content">
+            <a href="services/mobile-apps.html"
+              class="service-card-title">Mobile Apps &rsaquo;</a>
+            <p class="service-card-desc">Seamless experiences through powerful
+              mobile apps</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="assets/images/lead-management.jpeg" alt="Lead Management">
+          <div class="service-card-content">
+            <a href="services/lead-management.html"
+              class="service-card-title">Smart Lead management &rsaquo;</a>
+            <p class="service-card-desc">Capture, Nurture and Convert Leads with
+              Ease</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="assets/images/google-reviews.jpeg" alt="Google Review">
+          <div class="service-card-content">
+            <a href="services/review-management.html"
+              class="service-card-title">Google review management &rsaquo;</a>
+            <p class="service-card-desc">Manage, respond, and grow with better
+              reviews</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="assets/images/whatsapp-business.jpeg" alt="WhatsApp">
+          <div class="service-card-content">
+            <a href="services/whatsapp-business-transaction.html"
+              class="service-card-title">Whatsapp Business (Transactions)
+              &rsaquo;</a>
+            <p class="service-card-desc">Secure transactions directly through
+              WhatsApp</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="assets/images/ivr.jpeg" alt="IVR">
+          <div class="service-card-content">
+            <a href="services/ivr.html" class="service-card-title">IVR
+              &rsaquo;</a>
+            <p class="service-card-desc">IVR that streamlines your
+              communication</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img src="assets/images/seo.jpeg" alt="SEO">
+          <div class="service-card-content">
+            <a href="services/seo.html" class="service-card-title">Website SEO
+              &rsaquo;</a>
+            <p class="service-card-desc">Rank higher, grow faster with SEO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <span class="section-subheading">Get in touch</span>
+          <h2 class="section-heading">Let's elevate your online presence!</h2>
+
+          <form
+            action="https://script.google.com/macros/s/AKfycbyrl91HXJYW1EeZSglC_W-U6kis3qsCHgmtPkQfTG8-soNS8ltEbvvPE1b_eHHSOK3SCw/exec"
+            method="POST"
+            target="hidden_iframe" onsubmit="return handleSubmit();">
+            <label for="name">Name <span style="color:red">*</span></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email address <span
+                style="color:red">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone number <span
+                style="color:red">*</span></label>
+            <input type="tel" id="phone" name="phone" required
+              pattern="[0-9]{10}" inputmode="numeric">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <label class="consent">
+              <input type="checkbox" required>
+              I allow this website to store my submission so they can respond to
+              my inquiry. <span style="color:red">*</span>
+            </label>
+
+            <button type="submit" class="btn-primary submit-btn">SUBMIT</button>
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Get in touch</h3>
+          <p>📞 +91 7339156748</p>
+          <p>📧 <a
+              href="mailto:contact@nanisolutions.in">contact@nanisolutions.in</a></p>
+
+          <h3>Location</h3>
+          <p>📍 Coimbatore, Tamil Nadu, India</p>
+
+          <h3>Hours</h3>
+          <table>
+            <tr><td>Monday</td><td>9:00am – 6:00pm</td></tr>
+            <tr><td>Tuesday</td><td>9:00am – 6:00pm</td></tr>
+            <tr><td>Wednesday</td><td>9:00am – 6:00pm</td></tr>
+            <tr><td>Thursday</td><td>9:00am – 6:00pm</td></tr>
+            <tr><td>Friday</td><td>9:00am – 6:00pm</td></tr>
+            <tr><td>Saturday</td><td>9:00am – 6:00pm</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    function handleSubmit() {
+      // Delay gives time for Google Script to process the form
+      setTimeout(() => {
+        alert("✅ Your message has been sent!");
+        document.querySelector("form").reset();
+      }, 1000);
+      return true; // Allow form submission to continue
+    }
+
+    document.getElementById("phone").addEventListener("input", function () {
+      this.value = this.value.replace(/\D/g, "");
+    });
+  </script>
+
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("main-nav");
+    nav.classList.toggle("open");
+  }
+</script>
+
+</html>
