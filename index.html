@@ -12,32 +12,31 @@
   <body>
 
     <!-- Header -->
-    
-<header>
-  <div class="header-top">
-    <div class="logo">
-      <img src="assets/images/logo.jpeg" alt="Logo" />
-    </div>
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
-    <!-- Desktop nav -->
-    <nav class="desktop-nav">
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact" class="contact-btn">Contact</a>
-    </nav>
-  </div>
 
-  <!-- Mobile nav -->
-  <nav id="main-nav" class="mobile-nav">
-    <button class="close-nav" onclick="toggleMenu()">×</button>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact" class="contact-btn">Contact</a>
-  </nav>
-</header>
+    <header>
+      <div class="header-top">
+        <div class="logo">
+          <img src="assets/images/logo.jpeg" alt="Logo" />
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <!-- Desktop nav -->
+        <nav class="desktop-nav">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact" class="contact-btn">Contact</a>
+        </nav>
+      </div>
 
+      <!-- Mobile nav -->
+      <nav id="main-nav" class="mobile-nav">
+        <button class="close-nav" onclick="toggleMenu()">×</button>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="contact-btn">Contact</a>
+      </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -239,13 +238,5 @@
       this.value = this.value.replace(/\D/g, "");
     });
   </script>
-
-
-<script>
-  function toggleMenu() {
-    var nav = document.getElementById("main-nav");
-    nav.classList.toggle("open");
-  }
-</script>
-
+  <script type="text/javascript" src="common.js"></script>
 </html>
